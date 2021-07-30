@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Animations</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+    }
+    .container
+    {
+      height:100vh;
+      width:100vw;
+      background-color: aqua;
+    }
+    .box{
+      width:300px;
+      height: 300px;
+      background-color: red;
+      color:white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+     /* animation-name: widthAnimate;
+      animation-duration: 3s;
+      animation-delay: 1s;
+      animation-iteration-count: 3;
+      animation-direction: alternate-reverse;
+      animation-timing-function: ease-in-out;*/
+      animation: widthAnimate2 3s ease-in-out 0.5s 4 alternate;
+    }
+    img{
+     /* animation: widthAnimate .001s ease-in-out 0.5s infinite alternate;*/
+    }
+    @keyframes widthAnimate{
+      from{
+        width:30px;
+        height:30px;
+      }to{
+        width:490px;
+        height: 490px;
+      }
+    }
+    @keyframes widthAnimate2{
+      0%{
+        width:30px;
+        height:30px;
+      }
+      20%{
+        width:130px;
+        height:130px;
+      
+      }
+      100%{
+        width:590px;
+        height: 590px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="box">
+    </div>
+    <img src="index.jpg" width="434px">
+  </div>
+</body>
+</html>

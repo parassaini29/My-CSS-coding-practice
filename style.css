@@ -1,0 +1,10 @@
+#first {
+  /*used for calling id*/
+  background-color: aqua;
+}
+
+.bg-blue {
+  /*used for calling class*/
+  background-color: blue;
+  color: white;
+}
